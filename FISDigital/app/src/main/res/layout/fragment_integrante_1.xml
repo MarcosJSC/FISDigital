@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="cr.bamboo.fisdigital.layout.activity.Activity_Integrante_1$PlaceholderFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/svGeneralCara5">
+
+        <GridLayout
+            android:columnCount="1"
+            android:rowCount="20"
+            style="@style/FISWrapperGrid">
+            <LinearLayout
+                android:id="@+id/errorMsg5"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/error_msg"
+                android:focusableInTouchMode="true" >
+                <GridLayout
+                    android:layout_marginLeft="260dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dip"
+                    android:paddingBottom="12dip"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="28dip"
+                        android:layout_height="28dip"
+                        android:background="@drawable/alert"/>
+                    <TextView
+                        android:textColor="#FFF"
+                        android:layout_marginLeft="6dip"
+                        android:layout_marginTop="4dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Revise los campos en rojo"/>
+                </GridLayout>
+            </LinearLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="27. Tipo de Identificación"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true">
+                    <requestFocus></requestFocus>
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvTipoIdentificacion"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISTextView" />
+
+                <Button
+                    android:text="+"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/btnTipoIdentificacion"
+                    style="@style/FISButtonCatalogo" />
+
+            </GridLayout>
+
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+                <TextView
+                    android:text="(36) 28. Número de Identificación"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle"/>
+
+                <EditText
+                    android:id="@+id/etNumeroIdentificacion"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISEditText"
+                   android:inputType="number"
+                    android:imeOptions="actionNext"
+                    android:layout_width="670dp"/>
+
+                <Button
+                    android:text="Buscar"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/btnBuscarPersona"
+                    style="@style/FISButtonCatalogo"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textSize="18dp"
+                    android:visibility="gone"/>
+
+
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(35) 29. Primer Apellido"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle"/>
+
+                <EditText
+                    android:id="@+id/etPrimerApellido"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:inputType="textCapCharacters"
+                    style="@style/FISEditText"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true" />
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(35) 30. Segundo Apellido"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle"/>
+
+                <EditText
+                    android:id="@+id/etSegundoApellido"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:inputType="textCapCharacters"
+                    style="@style/FISEditText" />
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(35) 31. Primer Nombre"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle"/>
+
+                <EditText
+                    android:id="@+id/etPrimerNombre"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:inputType="textCapCharacters"
+                    style="@style/FISEditText" />
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(35) 32. Segundo Nombre"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle"/>
+
+                <EditText
+                    android:id="@+id/etSegundoNombre"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapCharacters"
+                    style="@style/FISEditText" />
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(37) 33. Fecha de Nacimiento"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle"/>
+
+                <TextView
+                    android:id="@+id/tvFechaNacimiento"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISTextViewMedium" />
+
+                <TextView
+                    android:id="@+id/tvErrorFechaNacimiento"
+                    android:text=""
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    style="@style/FISTextViewErrorRB"/>
+
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(38) 34. Edad"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle"/>
+
+                <EditText
+                    android:id="@+id/etEdad"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:enabled="false"
+                    android:inputType="number"
+                    style="@style/FISEditTextSmall" />
+
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(39) 35. Sexo"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle" />
+
+                <TextView
+                    android:id="@+id/tvSexo"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISTextView" />
+
+                <Button
+                    android:text="+"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/btnSexo"
+                    style="@style/FISButtonCatalogo" />
+
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(40) 36. Estado Civíl"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle" />
+
+                <TextView
+                    android:id="@+id/tvEstadoCivil"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISTextView" />
+
+                <Button
+                    android:text="+"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/btnEstadoCivil"
+                    style="@style/FISButtonCatalogo" />
+
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(41) 37. Nacionalidad"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle" />
+
+                <TextView
+                    android:id="@+id/tvNacionalidad"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISTextView" />
+
+                <Button
+                    android:text="+"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/btnNacionalidad"
+                    style="@style/FISButtonCatalogo" />
+
+            </GridLayout>
+
+            <GridLayout style="@style/FISRowGrid">
+                <Button
+                    android:text="SIGUIENTE"
+                    android:id="@+id/btnSiguiente"
+                    style="@style/FISButtonSiguiente"
+                    />
+            </GridLayout>
+        </GridLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="400dp"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:columnCount="1"
+        android:rowCount="4">
+
+        <TextView
+            android:layout_column="0"
+            android:layout_row="0"
+            android:text="FICHA DE INFORMACIÓN SOCIAL"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:background="#0a1e37"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textIsSelectable="false" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:columnCount="1"
+            android:rowCount="2"
+            android:background="#103056">
+
+            <TextView
+                android:layout_column="0"
+                android:layout_row="0"
+                android:text="OBSERVACIONES"
+                android:textColor="#ffffff"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp" />
+
+            <EditText
+                android:id="@+id/etObservaciones"
+                android:layout_row="1"
+                android:layout_column="0"
+                style="@style/FISEditTextArea"
+                android:layout_width="350dp"
+                android:layout_height="125dp"
+                android:inputType="textMultiLine"
+                android:imeOptions="actionDone"
+                android:layout_marginLeft="20dp" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:columnCount="1"
+            android:rowCount="2"
+            android:background="#0b233f">
+
+            <TextView
+                android:id="@+id/tvUsuario"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:text="Juan Perez"
+                android:textColor="#ffffff"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="20dp" />
+
+
+            <TextView
+                android:id="@+id/tvFechaDashboard"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:text="18/02/2015"
+                android:textColor="#ffffff"
+                android:layout_width="fill_parent"
+                android:gravity="center_vertical|center_horizontal" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:background="#103056">
+
+            <TextView
+                android:layout_column="0"
+                android:layout_row="0"
+                android:text="SECCIONES"
+                android:textColor="#ffffff"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:id="@+id/tvSecciones"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:text="0/10"
+                android:textColor="#ffa00e"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="28dp"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_column="1"
+                android:layout_row="0"
+                android:text="PREGUNTAS"
+                android:textColor="#ffffff"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:id="@+id/tvPreguntas"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:text="0/61"
+                android:textColor="#ffa00e"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="28dp"
+                android:layout_marginBottom="20dp" />
+
+        </GridLayout>
+
+    </GridLayout>
+
+
+
+</LinearLayout>

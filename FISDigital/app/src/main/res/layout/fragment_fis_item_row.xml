@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnCount="6"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+        <TextView
+            android:id="@+id/fis_fecha_creacion"
+            style="@style/FISRowTextView"
+            android:layout_column="0"
+            android:width="125dp" />
+        <TextView
+            android:id="@+id/fis_numero_folio"
+            style="@style/FISRowTextView"
+            android:layout_column="1"
+            android:width="100dp" />
+        <TextView
+            android:id="@+id/fis_estado"
+            style="@style/FISRowTextView"
+            android:layout_column="2"
+            android:width="130dp" />
+
+        <Button
+            android:id="@+id/btnUbicacion"
+            style="@style/FISRowButton"
+            android:text="Ubicación"
+            android:layout_column="3"/>
+        <Button
+            android:id="@+id/btnViviendaServicios"
+            style="@style/FISRowButton"
+            android:text="Vivienda y Servicios"
+            android:layout_column="4"/>
+        <Button
+            android:id="@+id/btnFamilias"
+            style="@style/FISRowButton"
+            android:text="Familias"
+            android:layout_column="5"/>
+    </GridLayout>
+
+
+</RelativeLayout>

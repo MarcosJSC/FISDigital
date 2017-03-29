@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="cr.bamboo.fisdigital.layout.activity.Activity_ViviendaServicios_1$PlaceholderFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/svGeneralCara2">
+
+        <GridLayout
+            android:columnCount="1"
+            android:rowCount="20"
+            style="@style/FISWrapperGrid">
+            <LinearLayout
+                android:id="@+id/errorMsg2"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/error_msg"
+                >
+                <GridLayout
+                    android:layout_marginLeft="260dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dip"
+                    android:paddingBottom="12dip"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="28dip"
+                        android:layout_height="28dip"
+                        android:background="@drawable/alert"/>
+                    <TextView
+                        android:textColor="#FFF"
+                        android:layout_marginLeft="6dip"
+                        android:layout_marginTop="4dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Revise los campos en rojo"/>
+                </GridLayout>
+
+            </LinearLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="3"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(20) 14. Paredes exteriores"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle"/>
+
+                <TextView
+                    android:id="@+id/tvParedesExteriores"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISTextView" />
+
+                <Button
+                    android:text="+"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/btnParedesExteriores"
+                    style="@style/FISButtonCatalogo" />
+
+                <GridLayout
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:columnCount="3"
+                    android:rowCount="1"
+                    style="@style/FISRowGridRadio">
+                    <RadioGroup
+                        android:id="@+id/radioEstadoParedes"
+                        style="@style/FISRadioGroup"
+                        android:clickable="false"
+                        android:visibility="visible">
+                        <RadioButton
+                            android:text="Bueno"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:id="@+id/rbtBuenoParedes"
+                            style="@style/FISRadioButton"
+                            />
+                        <RadioButton
+                            android:text="Regular"
+                            android:layout_row="0"
+                            android:layout_column="1"
+                            android:id="@+id/rbtRegularParedes"
+                            style="@style/FISRadioButton"
+                            />
+                        <RadioButton
+                            android:text="Malo"
+                            android:layout_row="0"
+                            android:layout_column="2"
+                            android:id="@+id/rbtMaloParedes"
+                            style="@style/FISRadioButton"
+                            />
+
+                    </RadioGroup>
+                    <TextView
+                        android:layout_column="1"
+                        android:columnCount="4"
+                        android:rowCount="1"
+                        style="@style/FISTextViewErrorRB"
+                        android:id="@+id/errorRbtParedes"
+                    />
+                </GridLayout>
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="3"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(21) 15. Piso"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle" />
+
+
+                <TextView
+                    android:id="@+id/tvPiso"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISTextView" />
+
+                <Button
+                    android:text="+"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/btnPiso"
+                    style="@style/FISButtonCatalogo" />
+
+                <GridLayout
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:columnCount="3"
+                    android:rowCount="1"
+                    style="@style/FISRowGridRadio">
+                    <RadioGroup
+                        android:id="@+id/radioEstadoPiso"
+                        style="@style/FISRadioGroup">
+                        <RadioButton
+                            android:text="Bueno"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:id="@+id/rbtBuenoPiso"
+                            style="@style/FISRadioButton"
+                            />
+                        <RadioButton
+                            android:text="Regular"
+                            android:layout_row="0"
+                            android:layout_column="1"
+                            android:id="@+id/rbtRegularPiso"
+                            style="@style/FISRadioButton"
+                            />
+                        <RadioButton
+                            android:text="Malo"
+                            android:layout_row="0"
+                            android:layout_column="2"
+                            android:id="@+id/rbtMaloPiso"
+                            style="@style/FISRadioButton"
+                            />
+                    </RadioGroup>
+                    <TextView
+                        android:layout_column="1"
+                        android:columnCount="4"
+                        android:rowCount="1"
+                        android:id="@+id/errorRbtPiso"
+                        style="@style/FISTextViewErrorRB"
+                    />
+                </GridLayout>
+
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="3"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(22) 16. Techo"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle" />
+
+                <TextView
+                    android:id="@+id/tvTecho"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISTextView" />
+
+                <Button
+                    android:text="+"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/btnTecho"
+                    style="@style/FISButtonCatalogo" />
+
+                <GridLayout
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:columnCount="3"
+                    android:rowCount="1"
+                    style="@style/FISRowGridRadio">
+                    <RadioGroup
+                        android:id="@+id/radioEstadoTecho"
+                        style="@style/FISRadioGroup">
+                        <RadioButton
+                            android:text="Bueno"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:id="@+id/rbtBuenoTecho"
+                            style="@style/FISRadioButton"
+                            />
+                        <RadioButton
+                            android:text="Regular"
+                            android:layout_row="0"
+                            android:layout_column="1"
+                            android:id="@+id/rbtRegularTecho"
+                            style="@style/FISRadioButton"
+                            />
+                        <RadioButton
+                            android:text="Malo"
+                            android:layout_row="0"
+                            android:layout_column="2"
+                            android:id="@+id/rbtMaloTecho"
+                            style="@style/FISRadioButton"
+                            />
+                    </RadioGroup>
+                    <TextView
+                        android:layout_column="1"
+                        android:columnCount="4"
+                        android:rowCount="1"
+                        android:id="@+id/errorRbtTecho"
+                        style="@style/FISTextViewErrorRB"
+                        />
+                </GridLayout>
+
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="3"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(23) 17. Cielo Raso"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle" />
+
+                <TextView
+                    android:id="@+id/tvCieloRaso"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISTextView" />
+
+                <Button
+                    android:text="+"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/btnCieloRaso"
+                    style="@style/FISButtonCatalogo" />
+
+                <GridLayout
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:columnCount="3"
+                    android:rowCount="1"
+                    style="@style/FISRowGridRadio">
+                    <RadioGroup
+                        android:id="@+id/radioEstadoCieloRaso"
+                        style="@style/FISRadioGroup">
+                        <RadioButton
+                            android:text="Bueno"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:id="@+id/rbtBuenoCieloRaso"
+                            style="@style/FISRadioButton"
+                            />
+                        <RadioButton
+                            android:text="Regular"
+                            android:layout_row="0"
+                            android:layout_column="1"
+                            android:id="@+id/rbtRegularCieloRaso"
+                            style="@style/FISRadioButton"
+                            />
+                        <RadioButton
+                            android:text="Malo"
+                            android:layout_row="0"
+                            android:layout_column="2"
+                            android:id="@+id/rbtMaloCieloRaso"
+                            style="@style/FISRadioButton"
+                            />
+                    </RadioGroup>
+                    <TextView
+                        android:layout_column="1"
+                        android:columnCount="4"
+                        android:id="@+id/errorRbtCielo"
+                        style="@style/FISTextViewErrorRB"
+                        />
+                </GridLayout>
+
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(24) 18. Aposentos"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle" />
+
+                <GridLayout
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:columnCount="5"
+                    android:rowCount="2"
+                    style="@style/FISRowGrid">
+
+                    <TextView
+                        android:text="Solo para dormir"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        style="@style/FISTextViewTitleNested" />
+
+                    <EditText
+                        android:id="@+id/etAposentos1"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:inputType="number"
+                        style="@style/FISEditTextSmallLeftMargin" />
+
+                    <TextView
+                        android:text="Para otros usos"
+                        android:layout_row="0"
+                        android:layout_column="2"
+                        android:layout_marginLeft="40dp"
+                        style="@style/FISTextViewTitleNested" />
+
+                    <EditText
+                        android:id="@+id/etAposentos2"
+                        android:layout_row="0"
+                        android:layout_column="3"
+                        style="@style/FISEditTextSmallLeftMargin"
+                        android:inputType="number"
+                        />
+                    <TextView
+                        android:text="Total de Aposentos"
+                        android:layout_row="0"
+                        android:layout_column="4"
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/tvTotalAposentos"
+                        />
+                    <TextView
+                        android:layout_row="1"
+                        android:id="@+id/errorAposentos"
+                        android:layout_columnSpan="3"
+                        style="@style/FISTextViewErrorRB"
+                        />
+                </GridLayout>
+
+
+            </GridLayout>
+
+            <GridLayout style="@style/FISRowGrid">
+                <Button
+                    android:text="SIGUIENTE"
+                    android:id="@+id/btnSiguiente"
+                    style="@style/FISButtonSiguiente" />
+            </GridLayout>
+        </GridLayout>
+    </ScrollView>
+
+</LinearLayout>

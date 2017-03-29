@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="cr.bamboo.fisdigital.layout.activity.Activity_ListarIntegrantes">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/svGeneralCara5">
+
+        <GridLayout
+            android:columnCount="1"
+            android:rowCount="3"
+            style="@style/FISWrapperGrid"
+            android:columnOrderPreserved="false"
+            android:longClickable="false"
+            android:minHeight="480dp">
+
+            <GridLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:columnCount="6"
+                android:layout_row="0"
+                android:paddingBottom="4dp"
+                android:id="@+id/gridHeaderFis"
+                android:layout_gravity="top"
+                android:layout_marginTop="15dp">
+                <TextView
+                    style="@style/FISRowTextView"
+                    android:layout_column="0"
+                    android:text="#" />
+                <TextView
+                    style="@style/FISRowTextView"
+                    android:layout_column="1"
+                    android:text="Nombre Completo"
+                    android:paddingLeft="10dp"/>
+                <TextView
+                    style="@style/FISRowTextView"
+                    android:layout_column="2"
+                    android:text="Parentesco"
+                    android:paddingLeft="240dp"/>
+            </GridLayout>
+
+            <ListView android:id="@+id/miembrosListView"
+                android:layout_width="fill_parent" android:layout_column="0"
+                android:layout_row="1"
+                android:layout_height="340dp">
+
+            </ListView>
+
+
+            <GridLayout style="@style/FISRowGrid" android:columnCount="2"
+                android:rowCount="1" android:layout_column="0" android:layout_row="2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+                <Button
+                    android:text="Agregar Integrante"
+                    android:id="@+id/btnAgregarIntegrante"
+                    style="@style/FISButtonSiguiente"
+                    android:layout_column="0"
+                    android:layout_row="0" />
+                <Button
+                    android:text="Regresar a Familias"
+                    android:id="@+id/btnRegresar"
+                    style="@style/FISButtonSiguiente"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:layout_gravity="right" />
+            </GridLayout>
+        </GridLayout>
+    </ScrollView>
+
+</LinearLayout>

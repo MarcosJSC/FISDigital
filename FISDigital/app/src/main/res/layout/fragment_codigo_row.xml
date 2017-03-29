@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnCount="3"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+        <TextView
+            android:id="@+id/fis_codigo"
+            style="@style/FISRowTextView"
+            android:layout_column="0"
+            android:width="80dp"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/fis_descripcion_codigo"
+            style="@style/FISRowTextView"
+            android:layout_column="1"
+            android:width="550dp"
+            android:textSize="15dp"/>
+        <Button
+            android:id="@+id/btnAccionCodigo"
+            style="@style/FISRowButton"
+            android:text="Eliminar"
+            android:layout_column="2"/>
+    </GridLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="cr.bamboo.fisdigital.layout.activity.Activity_ViviendaServicios_2$PlaceholderFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/svGeneralCara3">
+
+        <GridLayout
+            android:columnCount="1"
+            android:rowCount="21"
+            style="@style/FISWrapperGrid">
+            <LinearLayout
+                android:id="@+id/errorMsg3"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/error_msg"
+                >
+                <GridLayout
+                    android:layout_marginLeft="260dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dip"
+                    android:paddingBottom="12dip"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="28dip"
+                        android:layout_height="28dip"
+                        android:background="@drawable/alert"/>
+                    <TextView
+                        android:textColor="#FFF"
+                        android:layout_marginLeft="6dip"
+                        android:layout_marginTop="4dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Revise los campos en rojo"/>
+                </GridLayout>
+
+            </LinearLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(25) 19. Número de Camas"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle"/>
+
+                <EditText
+                    android:id="@+id/etNumeroCamas"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:imeOptions="actionDone"
+                    android:inputType="number|numberSigned|numberDecimal"
+                    style="@style/FISEditTextSmall" />
+                <TextView
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/errorCamas"
+                    />
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(26) 20. Fuente de Abastecimiento de Agua"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle" />
+
+                <TextView
+                    android:id="@+id/tvFuenteAbastecimientoAgua"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISTextView" />
+
+                <Button
+                    android:text="+"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/btnFuenteAbastecimientoAgua"
+                    style="@style/FISButtonCatalogo" />
+
+            </GridLayout>
+
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid"
+                android:id="@+id/gridNumeroNIS"
+                android:visibility="gone">
+
+                <TextView
+                    android:text="Número NIS"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle"/>
+
+                <EditText
+                    android:id="@+id/etNumeroNIS"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    style="@style/FISEditTextMedium" />
+                <TextView
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/errorNumeroNis"
+                    />
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid"
+                android:id="@+id/gridMontoAgua"
+                android:visibility="gone">
+
+                <TextView
+                    android:text="Monto Mensual de Agua"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle" />
+
+                <EditText
+                    android:id="@+id/etMontoMensualAgua"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    style="@style/FISEditTextMedium" />
+                <TextView
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:id="@+id/errorMontoAgua"
+                    />
+
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(27) 21. Medio de Abastecimiento de Agua"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle" />
+
+                <TextView
+                    android:id="@+id/tvMedioAbastecimientoAgua"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISTextView" />
+
+                <Button
+                    android:text="+"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/btnMedioAbastecimientoAgua"
+                    style="@style/FISButtonCatalogo" />
+
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(28) 22. Disponibilidad de Luz Eléctrica"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle" />
+
+                <TextView
+                    android:id="@+id/tvDisponiblidadLuzElectrica"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISTextView" />
+
+                <Button
+                    android:text="+"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/btnDisponibilidadLuzElectrica"
+                    style="@style/FISButtonCatalogo" />
+
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid"
+                android:id="@+id/gridMontoLuz"
+                android:visibility="gone">
+
+                <TextView
+                    android:text="Monto Mensual de Luz"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle" />
+
+                <EditText
+                    android:id="@+id/etMontoMensualLuz"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:inputType="number"
+                    style="@style/FISEditTextMedium" />
+                <TextView
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:id="@+id/errorMontoLuz"
+                    />
+
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(29) 23. Disponibilidad de Baño"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle" />
+
+                <TextView
+                    android:id="@+id/tvDisponibilidadBano"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISTextView" />
+
+                <Button
+                    android:text="+"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/btnDisponibilidadBano"
+                    style="@style/FISButtonCatalogo" />
+
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(30) 24. Servicio Sanitario Conectado A"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle" />
+
+                <TextView
+                    android:id="@+id/tvSanitarioConectado"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISTextView" />
+
+                <Button
+                    android:text="+"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/btnSanitarioConectado"
+                    style="@style/FISButtonCatalogo" />
+
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+                <TextView
+                    android:text="(31) 25. Fuente de Energía para Cocinar"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle" />
+
+                <TextView
+                    android:id="@+id/tvFuenteEnergiaCocina"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISTextView" />
+
+                <Button
+                    android:text="+"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/btnFuenteEnergiaCocina"
+                    style="@style/FISButtonCatalogo" />
+
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+                <TextView
+                    android:text="(32) 26. Medio de Eliminación de la Basura"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle" />
+
+                <TextView
+                    android:id="@+id/tvMedioEliminacionBasura"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISTextView" />
+
+                <Button
+                    android:text="+"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/btnMedioEliminacionBasura"
+                    style="@style/FISButtonCatalogo" />
+
+            </GridLayout>
+
+            <GridLayout style="@style/FISRowGrid">
+                <Button
+                    android:text="SIGUIENTE"
+                    android:id="@+id/btnSiguiente"
+                    style="@style/FISButtonSiguiente" />
+            </GridLayout>
+        </GridLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="cr.bamboo.fisdigital.layout.activity.Activity_Integrante_2$PlaceholderFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/svGeneralCara6">
+
+        <GridLayout
+            android:columnCount="1"
+            android:rowCount="20"
+            style="@style/FISWrapperGrid">
+            <LinearLayout
+                android:id="@+id/errorMsg6"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/error_msg"
+                android:focusableInTouchMode="true"
+                android:focusable="true">
+                <GridLayout
+                    android:layout_marginLeft="260dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dip"
+                    android:paddingBottom="12dip"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="28dip"
+                        android:layout_height="28dip"
+                        android:background="@drawable/alert"/>
+                    <TextView
+                        android:textColor="#FFF"
+                        android:layout_marginLeft="6dip"
+                        android:layout_marginTop="4dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Revise los campos en rojo"/>
+                </GridLayout>
+            </LinearLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(43) 38. Parentesco según número de familia"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true">
+                <requestFocus></requestFocus>
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvParentescoNumero"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISTextView"
+                    android:focusableInTouchMode="true" />
+
+                <Button
+                    android:text="+"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/btnParentescoNumero"
+                    style="@style/FISButtonCatalogo" />
+
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(44) 39. Parentesco entre jefes de familia"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle" />
+
+                <TextView
+                    android:id="@+id/tvParentescoJefes"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISTextView" />
+
+                <Button
+                    android:text="+"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/btnParentescoJefes"
+                    style="@style/FISButtonCatalogo" />
+
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(45) 40. Número de Hogar"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle"/>
+
+                <EditText
+                    android:id="@+id/etNumeroHogar"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    style="@style/FISEditTextSmall" />
+                <TextView
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/errorNumeroHogar"
+                    />
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(46) 41. Condición Actividad"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle" />
+
+                <TextView
+                    android:id="@+id/tvCondicionActividad"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISTextView" />
+
+                <Button
+                    android:text="+"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/btnCondicionActividad"
+                    style="@style/FISButtonCatalogo" />
+
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(47) 42. Ocupación u Oficio"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle"/>
+
+                <TextView
+                    android:id="@+id/tvOcupacionOficio"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISTextView" />
+
+                <Button
+                    android:text="+"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/btnOcupacionOficio"
+                    style="@style/FISButtonCatalogo" />
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(48) 43. Categoría Ocupacional"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle" />
+
+                <TextView
+                    android:id="@+id/tvCategoriaOcupacional"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISTextView" />
+
+                <Button
+                    android:text="+"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/btnCategoriaOcupacional"
+                    style="@style/FISButtonCatalogo" />
+
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(49) 44. Ingreso mensual por salario"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle"/>
+
+                <EditText
+                    android:id="@+id/etIngresoMensualSalario"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:inputType="numberDecimal"
+                    style="@style/FISEditTextMedium" />
+
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(50) 45. Ingreso mensual por cuenta propia o patrono"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle"/>
+
+                <EditText
+                    android:id="@+id/etIngresoMensualPropioPatrono"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISEditTextMedium"
+                    android:inputType="numberDecimal" />
+
+            </GridLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="2"
+                style="@style/FISRowGrid">
+
+                <TextView
+                    android:text="(51) 46. Otros ingresos mensuales por pensiones, aportes de terceros, etc."
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    style="@style/FISTextViewTitle"/>
+
+                <EditText
+                    android:id="@+id/etOtrosIngresos"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    style="@style/FISEditTextMedium"
+                    android:inputType="numberDecimal"/>
+
+            </GridLayout>
+
+            <GridLayout style="@style/FISRowGrid">
+                <Button
+                    android:text="SIGUIENTE"
+                    android:id="@+id/btnSiguiente"
+                    style="@style/FISButtonSiguiente" />
+            </GridLayout>
+        </GridLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cr.bamboo.fisdigital"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.orm.SugarApp"
+        android:allowBackup="true"
+        android:icon="@drawable/imas_logo"
+        android:label="@string/app_name"
+        android:screenOrientation="landscape"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:logo="@android:color/transparent"
+        tools:replace="android:icon"
+        android:versionCode="1"
+        android:versionName="1.9.8">
+        <meta-data
+            android:name="DATABASE"
+            android:value="app_native.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="19" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="cr.bamboo.fisdigital.data.dbmodel" />
+
+        <activity
+            android:name=".layout.activity.Activity_Login"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".layout.activity.Activity_Ubicacion"
+            android:label="@string/title_activity_fiscara1"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
+            android:name=".layout.activity.Activity_ViviendaServicios_1"
+            android:label="@string/title_activity_fiscara2"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
+            android:name=".layout.activity.Activity_ViviendaServicios_2"
+            android:label="@string/title_activity_fis_cara3"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
+            android:name=".layout.activity.Activity_ListarFamilias"
+            android:label="@string/title_activity_fis_cara4"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
+            android:name=".layout.activity.Activity_Integrante_1"
+            android:label="@string/title_activity_fis_cara4"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
+            android:name=".layout.activity.Activity_Integrante_2"
+            android:label="@string/title_activity_fis_cara4"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
+            android:name=".layout.activity.Activity_Integrante_3"
+            android:label="@string/title_activity_fis_cara4"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
+            android:name=".layout.activity.Activity_Patrimonio"
+            android:label="@string/title_activity_fis_cara4"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
+            android:name=".layout.activity.Activity_CodigosEspeciales"
+            android:label="@string/title_activity_fis_cara4"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
+            android:name=".layout.activity.Activity_ListarIntegrantes"
+            android:label="@string/title_activity_fis_cara4"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
+            android:name=".layout.activity.Activity_PantallaInicial"
+            android:label="@string/title_activity_pantalla_inicial"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".layout.activity.Activity_PantallaSyncCatalogos"
+            android:label="@string/title_activity_pantalla_inicial"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".layout.activity.Activity_ListarFIS"
+            android:label="@string/title_activity_pantalla_inicial"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
+            android:name=".layout.activity.Activity_PantallaSyncFIS"
+            android:screenOrientation="landscape"
+            android:label="@string/title_activity_pantalla_sync_fis" >
+        </activity>
+        <activity
+            android:name=".layout.activity.Activity_Correos"
+            android:screenOrientation="landscape"
+            android:label="@string/title_activity_pantalla_correos"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+    </application>
+
+</manifest>

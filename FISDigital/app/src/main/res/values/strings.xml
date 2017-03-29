@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FIS Digital</string>
+    <string name="client">IMAS</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mattis et purus nec consequat. Cras consequat nibh ac accumsan efficitur. Phasellus semper interdum tellus, vitae sollicitudin orci euismod sit amet. Vivamus eu auctor nisl, in egestas enim. Vivamus ligula dui, egestas sed auctor lobortis, sodales ut nisl. Nam eu neque velit. Maecenas sagittis dolor ac auctor lobortis. Fusce in purus eu nisl rutrum laoreet. Duis nisl leo, ultrices malesuada arcu nec, sodales posuere lectus. Nullam mattis tellus felis. Donec sollicitudin turpis in sodales venenatis.</string>
+    <string name="btnlogin">INGRESAR</string>
+    <string name="title_activity_fiscara1">FISCara1</string>
+    <string name="title_cara1">Ubicación</string>
+    <string name="title_cara2">Vivienda y Servicios</string>
+    <string name="title_seccion3">Indentificación de los Residentes de la Vivienda</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_fiscara2">FISCara2</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_activity_fis_cara3">FisCara2</string>
+    <string name="title_activity_fis_cara4">FisCara2P2</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_activity_pantalla_inicial">PantallaInicial</string>
+    <string name="title_activity_example">example</string>
+    <string name="title_activity_cara_exito">CaraExito</string>
+    <string name="title_activity_pantalla_sync_fis">PantallaSyncFIS</string>
+    <string name="title_activity_pantalla_correos">PantallaCorreos</string>
+<string name="logout">Cerrar Sesión</string>
+</resources>

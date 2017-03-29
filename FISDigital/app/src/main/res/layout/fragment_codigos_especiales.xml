@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="cr.bamboo.fisdigital.layout.activity.Activity_CodigosEspeciales$PlaceholderFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/svGeneralCara9">
+
+        <GridLayout
+            android:columnCount="1"
+            android:rowCount="5"
+            style="@style/FISWrapperGrid" >
+
+            <GridLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:columnCount="5"
+                android:layout_row="0"
+                android:paddingBottom="4dp"
+                android:id="@+id/gridHeaderFamilia"
+                android:layout_gravity="top"
+                android:layout_marginTop="10dp">
+                <TextView
+                    style="@style/FISRowTextView"
+                    android:layout_column="0"
+                    android:text="Código"
+                    android:layout_marginRight="5dp"/>
+                <EditText
+                    android:inputType="number|text"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:id="@+id/etBusquedaCodigo"
+                    android:layout_width="90dp"
+                    style="@style/FISEditTextSmall"
+                     />
+
+                <TextView
+                    style="@style/FISRowTextView"
+                    android:layout_column="2"
+                    android:text="Descripción"
+                    android:layout_marginRight="5dp"/>
+                <EditText
+                    android:layout_row="0"
+                    android:layout_column="3"
+                    android:id="@+id/etBusquedaDesc"
+                    android:layout_width="350dp"
+                    style="@style/FISEditText"
+                     />
+
+                <Button
+                    android:text="Buscar"
+                    android:layout_row="0"
+                    android:layout_column="4"
+                    android:id="@+id/btn_buscar_codigos"
+                    style="@style/FISButtonCatalogo"
+                    android:paddingLeft="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:textSize="18dp"
+                    android:layout_gravity="left" />
+
+            </GridLayout>
+            <TextView
+                android:id="@+id/empty2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No se encontraron resultados"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textStyle="bold"
+                android:layout_marginTop="70dp"
+                android:visibility="gone"/>
+            <ListView android:id="@+id/codigosEspecialesListViewResultados"
+                android:layout_width="fill_parent" android:layout_column="0"
+                android:layout_row="1"
+                android:layout_marginTop="5dp"
+                android:layout_height="148dp">
+            </ListView>
+            <TextView
+                style="@style/FISRowTextView"
+                android:layout_column="0"
+                android:text="Agregados"
+                android:id="@+id/tvCodigosAgregados"
+                android:layout_gravity="top"
+                android:layout_row="2"
+                android:gravity="top"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@android:id/empty"
+                android:layout_width="wrap_content"
+                android:text="No se han agregado códigos"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textStyle="bold"
+                android:layout_height="140dp"
+                android:layout_row="3"
+                android:layout_marginTop="10dp" />
+            <ListView android:id="@+id/codigosEspecialesListView"
+                android:layout_width="fill_parent" android:layout_column="0"
+                android:layout_row="3"
+                android:layout_height="148dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="10dp">
+            </ListView>
+
+
+            <GridLayout style="@style/FISRowGrid"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_row="4">
+                <Button
+                    android:text="SIGUIENTE"
+                    android:id="@+id/btnSiguiente"
+                    style="@style/FISButtonSiguiente" />
+            </GridLayout>
+        </GridLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" tools:context="cr.bamboo.fisdigital">
+<item android:icon="@android:color/transparent" android:title=""></item>
+<item android:id="@+id/action_settings" android:title="@string/logout"
+    android:orderInCategory="100" android:showAsAction="never" />
+</menu>
